@@ -1,7 +1,7 @@
 [![Module](https://img.shields.io/badge/Module-for%20Chataigne-ffa200)](https://benjamin.kuperberg.fr/chataigne/en) [![Platform](https://img.shields.io/badge/platform-MacOS%20%7C%20Windows%20%7C%20Linux-6d9fba)](https://github.com/Yoons-B1/Chataigne-MIDI-MMC-Command-Module/releases) [![Release](https://img.shields.io/badge/Release-V.1.1-fc1ba6)](https://github.com/Yoons-B1/Chataigne-MIDI-MMC-Command-Module/releases) [![License](https://img.shields.io/github/license/Yoons-B1/ModbusTCP-polling_Chataigne-Module)](https://github.com/Yoons-B1/ModbusTCP-polling_Chataigne-Module/blob/main/LICENSE)
 # MIDI MMC Command (SysEx) Module - for Chataigne
 
-## Overview
+## 1. Overview
 
 This module is designed to control timecode-based playback devices using **MIDI Machine Control (MMC) via SysEx**.
 
@@ -10,7 +10,7 @@ It is optimized for devices like the **DOREMIDI MTC-30**, where standard MMC com
 ---
 <img width="614" height="895" alt="modulemane01" src="https://github.com/user-attachments/assets/4654906b-d478-4451-9e3b-fbcd4393c790" />
 
-## Key Features
+## 2. Key Features
 
 * Send **MMC Command (SysEx)** such as Play, Stop, etc.
 * Send **MMC Goto (SysEx)** using timecode (HH:MM:SS:FF)
@@ -29,7 +29,7 @@ It is optimized for devices like the **DOREMIDI MTC-30**, where standard MMC com
 
 ---
 
-## Why This Module?
+## 3. Why This Module?
 
 Some timecode players (e.g. DOREMIDI MTC-30) have issues with:
 
@@ -45,7 +45,7 @@ This module solves those issues by:
 
 ---
 
-## Usage Notes
+## 4. Usage Notes
 
 * The **Frame Rate setting only affects SysEx Goto commands**
 * Standard MMC Commands do **not** use frame rate
@@ -56,7 +56,7 @@ This module solves those issues by:
 
 ---
 
-## 4. MTC-30 Driver & Tool
+## 5. MTC-30 Driver & Tool
 
 * https://www.doremidi.cn/h-pd-106.html
   

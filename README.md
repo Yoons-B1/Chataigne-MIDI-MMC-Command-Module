@@ -1,5 +1,5 @@
 [![Module](https://img.shields.io/badge/Module-for%20Chataigne-ffa200)](https://benjamin.kuperberg.fr/chataigne/en) [![Platform](https://img.shields.io/badge/platform-MacOS%20%7C%20Windows%20%7C%20Linux-6d9fba)](https://github.com/Yoons-B1/Chataigne-MIDI-MMC-Command-Module/releases) [![Release](https://img.shields.io/badge/Release-V.1.1-fc1ba6)](https://github.com/Yoons-B1/Chataigne-MIDI-MMC-Command-Module/releases) [![License](https://img.shields.io/github/license/Yoons-B1/ModbusTCP-polling_Chataigne-Module)](https://github.com/Yoons-B1/ModbusTCP-polling_Chataigne-Module/blob/main/LICENSE)
-# MIDI MMC Command (SysEx) Module - for Chataigne
+# Chataigne - MIDI MMC Command(SysEx) Module  
 
 ## 1. Overview
 

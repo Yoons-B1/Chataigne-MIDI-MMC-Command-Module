@@ -63,6 +63,7 @@ This module solves those issues by:
 <img width="332" height="274" alt="mtc0001" src="https://github.com/user-attachments/assets/7f8ce078-c3ec-40cd-8080-537eee214b2f" />
 
 ---
+---
 
 # MIDI MMC Command (SysEx) Module - for Chataigne
 

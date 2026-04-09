@@ -5,7 +5,7 @@
 
 This module is designed to control timecode-based playback devices using **MIDI Machine Control (MMC) via SysEx**.
 
-It is optimized for devices like the **DOREMIDI MTC-30**, where standard MMC commands may not work reliably, and SysEx-based control is required for stable operation.
+It is optimized for devices like the **DOREMiDi MTC-30, MTC-20, MTC-10**, where standard MMC commands may not work reliably, and SysEx-based control is required for stable operation.
 
 ---
 <img width="614" height="895" alt="modulemane01" src="https://github.com/user-attachments/assets/4654906b-d478-4451-9e3b-fbcd4393c790" />
@@ -31,7 +31,7 @@ It is optimized for devices like the **DOREMIDI MTC-30**, where standard MMC com
 
 ## 3. Why This Module?
 
-Some timecode players (e.g. DOREMIDI MTC-30) have issues with:
+Some timecode players (e.g. DOREMiDi MTC-30) have issues with:
 
 * Standard MMC commands not triggering playback
 * Unstable behavior when using SysEx only
@@ -71,7 +71,7 @@ This module solves those issues by:
 
 이 모듈은 **MIDI Machine Control (MMC)의 SysEx 명령을 사용하여 타임코드 기반 장비를 제어**하기 위해 제작되었습니다.
 
-특히 **DOREMIDI MTC-30**과 같이 일반 MMC 명령이 제대로 동작하지 않거나, SysEx 기반 제어가 필요한 환경에 최적화되어 있습니다.
+특히 **DOREMIDI MTC-30, MTC-20, MTC-10**과 같이 일반 MMC 명령이 제대로 동작하지 않거나, SysEx 기반 제어가 필요한 환경에 최적화되어 있습니다.
 
 ---
 
@@ -92,7 +92,7 @@ This module solves those issues by:
 
 ## 이 모듈이 필요한 이유
 
-일부 타임코드 플레이어(예: DOREMIDI MTC-30)는 다음과 같은 문제가 있습니다:
+일부 타임코드 플레이어(예: DOREMiDi MTC-30)는 다음과 같은 문제가 있습니다:
 
 * 일반 MMC Command로 실행되지 않음
 * SysEx만 사용할 경우 트리거가 불안정함

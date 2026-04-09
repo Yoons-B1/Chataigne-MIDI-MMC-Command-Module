@@ -1,0 +1,209 @@
+{
+  "name": "MIDI MMC Command",
+  "type": "MIDI",
+  "path": "Protocol",
+  "version": "1.1.0",
+  "description": "MMC helper for MTC-30 style workflows: optional native Force MMC primer + SysEx cue execution",
+  "hasInput": true,
+  "hasOutput": true,
+  "parameters": {
+    "Device ID": {
+      "type": "Integer",
+      "default": 127,
+      "min": 0,
+      "max": 127
+    },
+    "Default cue delay ms": {
+      "type": "Integer",
+      "default": 0,
+      "min": 0,
+      "max": 2000
+    },
+    "Default subframes": {
+      "type": "Integer",
+      "default": 0,
+      "min": 0,
+      "max": 99
+    },
+    "Frame Rate": {
+      "type": "Enum",
+      "options": {
+        "24": 24,
+        "25": 25,
+        "30DP (29.97)": 2997,
+        "30": 30
+      },
+      "default": 30
+    },
+    "Default cue goto repeats": {
+      "type": "Integer",
+      "default": 2,
+      "min": 1,
+      "max": 4
+    },
+    "Log outgoing": {
+      "type": "Boolean",
+      "default": true
+    },
+    "Clear queue": {
+      "type": "Trigger"
+    }
+  },
+  "values": {
+    "Status": {
+      "type": "Container",
+      "Last sent command": {
+        "type": "String"
+      },
+      "Last goto": {
+        "type": "String"
+      },
+      "Last sysex": {
+        "type": "String"
+      },
+      "Queue length": {
+        "type": "Integer"
+      },
+      "Last log": {
+        "type": "String"
+      }
+    }
+  },
+  "commands": {
+    "MMC Command (SysEx)": {
+      "menu": "MMC",
+      "callback": "mmcCommand",
+      "parameters": {
+        "Command": {
+          "type": "Enum",
+          "options": {
+            "Stop": 1,
+            "Play": 2,
+            "Deferred Play": 3,
+            "Fast Forward": 4,
+            "Rewind": 5,
+            "Record Start": 6,
+            "Record Stop": 7,
+            "Pause": 9
+          },
+          "default": 1
+        },
+        "Force MMC": {
+          "type": "Boolean",
+          "default": false
+        }
+      }
+    },
+    "MMC Goto (SysEx)": {
+      "menu": "MMC",
+      "callback": "mmcGoto",
+      "parameters": {
+        "Hours": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 23
+        },
+        "Minutes": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 59
+        },
+        "Seconds": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 59
+        },
+        "Frames": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 29
+        },
+        "Subframes": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 99
+        },
+        "Repeat Goto": {
+          "type": "Integer",
+          "default": 1,
+          "min": 1,
+          "max": 4
+        }
+      }
+    },
+    "MMC Cue (Goto + Command)": {
+      "menu": "MMC",
+      "callback": "mmcCue",
+      "parameters": {
+        "Hours": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 23
+        },
+        "Minutes": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 59
+        },
+        "Seconds": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 59
+        },
+        "Frames": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 29
+        },
+        "Subframes": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 99
+        },
+        "Repeat Goto": {
+          "type": "Integer",
+          "default": 2,
+          "min": 1,
+          "max": 4
+        },
+        "Delay ms": {
+          "type": "Integer",
+          "default": 0,
+          "min": 0,
+          "max": 2000
+        },
+        "Command": {
+          "type": "Enum",
+          "options": {
+            "Stop": 1,
+            "Play": 2,
+            "Deferred Play": 3,
+            "Fast Forward": 4,
+            "Rewind": 5,
+            "Record Start": 6,
+            "Record Stop": 7,
+            "Pause": 9
+          },
+          "default": 2
+        },
+        "Force MMC": {
+          "type": "Boolean",
+          "default": false
+        }
+      }
+    }
+  },
+  "scripts": [
+    "MIDI_MMC_Command.js"
+  ]
+}

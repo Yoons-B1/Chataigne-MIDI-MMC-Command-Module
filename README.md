@@ -56,7 +56,11 @@ This module solves those issues by:
 
 ---
 
+## 4. MTC-30 Driver & Tool
 
+* https://www.doremidi.cn/h-pd-106.html
+  
+<img width="332" height="274" alt="mtc0001" src="https://github.com/user-attachments/assets/7f8ce078-c3ec-40cd-8080-537eee214b2f" />
 
 ---
 
